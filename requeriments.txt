@@ -9,9 +9,9 @@ pyarrow<8.1.0,>=8.0.0
 
 # Alternate Approach
 # -------------------
-# snowflake-connector-python
-# pandas
-# pyarrow
+snowflake-connector-python
+pandas
+pyarrow
 
 # ---------------------------------------------
 # pyarray latest version 9.0.0 does not work
