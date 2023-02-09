@@ -1,6 +1,19 @@
 # requeriments.txt
-snowflake-connector-python
-cffi==1.15.0
-pyarrow<8.1.0,>=8.0.0
-streamlit >= 1.9.2
 
+#Libraries to be installed
+# -------------------
+snowflake-connector-python[pandas]
+pyarrow<8.1.0,>=8.0.0
+
+
+
+# Alternate Approach
+# -------------------
+# snowflake-connector-python
+# pandas
+# pyarrow
+
+# ---------------------------------------------
+# pyarray latest version 9.0.0 does not work
+# UserWarning: You have an incompatible version of 'pyarrow' installed (9.0.0), please install a version that adheres to: 'pyarrow<8.1.0,>=8.0.0; extra == "pandas"'
+# ---------------------------------------------
