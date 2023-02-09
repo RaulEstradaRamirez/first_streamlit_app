@@ -19,7 +19,6 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 import snowflake.connector
-cffi==1.15.0
 pyarrow<8.1.0,>=8.0.0
 streamlit >= 1.9.2
 
