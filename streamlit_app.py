@@ -23,6 +23,8 @@ import snowflake.connector
 
 streamlit.header('Fruityvice Fruit Advice!')
 
+streamlit.header('What fruit would you like information about?')
+
 
 
 
