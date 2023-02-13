@@ -21,6 +21,7 @@ streamlit.dataframe(fruits_to_show)
 
 import snowflake.connector
 
+streamlit.header('Fruityvice Fruit Advice!')
 
 
 
