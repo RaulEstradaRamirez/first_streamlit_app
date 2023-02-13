@@ -22,8 +22,8 @@ streamlit.dataframe(fruits_to_show)
 import snowflake.connector
 
 streamlit.header('Fruityvice Fruit Advice!')
-
 streamlit.text('What fruit would you like information about?')
+sentence = st.text_input('Input your sentence here:') 
 
 
 
