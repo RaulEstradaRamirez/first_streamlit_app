@@ -26,7 +26,7 @@ streamlit.text('What fruit would you like information about?')
 
 import streamlit as st
 
-title = st.text_input('What fruit would you like information about?',kiwi)
+title = st.text_input('What fruit would you like information about?','kiwi')
 st.write('The current movie title is', title)
 streamlit.dataframe(title)
 
