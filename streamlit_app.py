@@ -29,6 +29,10 @@ import streamlit as st
 title = st.text_input('What fruit would you like information about?','kiwi')
 st.write('The current movie title is', title)
 
+fruits_to_show = my_fruit_list.loc[title]
+# Display the table on the page
+streamlit.dataframe(fruits_to_show)
+
 
 
 
