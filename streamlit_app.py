@@ -24,14 +24,10 @@ import snowflake.connector
 streamlit.header('Fruityvice Fruit Advice!')
 streamlit.text('What fruit would you like information about?')
 
-import streamlit as st
+title = streamlit.text_input('What fruit would you like information about?','kiwi')
+streamlit.write('The current movie title is', title)
 
-title = st.text_input('What fruit would you like information about?','kiwi')
-st.write('The current movie title is', title)
 
-fruits_to_show = my_fruit_list.loc[title]
-# Display the table on the page
-streamlit.dataframe(fruits_to_show)
 
 
 
