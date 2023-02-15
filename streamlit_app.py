@@ -32,17 +32,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-
-
 import snowflake.connector
-
-streamlit.header('Fruityvice Fruit Advice!')
-streamlit.text('What fruit would you like information about?')
-
-title = streamlit.text_input('What fruit would you like information about?','kiwi')
-streamlit.write('The current movie title is', title)
-
-streamlit.header('Hasta aquí')
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
