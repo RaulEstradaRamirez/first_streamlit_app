@@ -26,14 +26,7 @@ streamlit.text('What fruit would you like information about?')
 title = streamlit.text_input('What fruit would you like information about?','kiwi')
 streamlit.write('The current movie title is', title)
 
-
-fruits_selected = title
-fruits_to_show = my_fruit_list.loc[fruits_selected]
-# Display the table on the page
-streamlit.dataframe(fruits_to_show)
-
-
-
+print(my_fruit_list)
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
