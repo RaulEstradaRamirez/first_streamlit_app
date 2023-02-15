@@ -27,18 +27,7 @@ streamlit.text('What fruit would you like information about?')
 title = streamlit.text_input('What fruit would you like information about?','kiwi')
 streamlit.write('The current movie title is', title)
 
-
-my_fruit_list2 = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-my_fruit_list2 = my_fruit_list2.set_index('Fruit')
-# Let's put a pick list here so they can pick the fruit they want to include 
-fruits_selected2 = streamlit.multiselect("Pick some fruits:", list(my_fruit_list2.index),['Avocado','Strawberries'])
-fruits_to_show2 = my_fruit_list2.loc[fruits_selected2]
-# Display the table on the page
-streamlit.dataframe(fruits_to_show2)
-
-
-
-
+print("Hasta aquí")
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
