@@ -23,11 +23,10 @@ import snowflake.connector
 streamlit.header('Fruityvice Fruit Advice!')
 streamlit.text('What fruit would you like information about?')
 
-
 title = streamlit.text_input('What fruit would you like information about?','kiwi')
 streamlit.write('The current movie title is', title)
 
-print("Hasta aquí")
+streamlit.header('Hasta aquí')
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
