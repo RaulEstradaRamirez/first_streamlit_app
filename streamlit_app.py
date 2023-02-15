@@ -19,6 +19,13 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page
 streamlit.dataframe(fruits_to_show)
 
+
+
+print (my_fruit_list.query("Fruit=='Kiwi'"))
+
+
+
+
 import snowflake.connector
 
 streamlit.header('Fruityvice Fruit Advice!')
@@ -40,7 +47,3 @@ my_cur.execute("select * from fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
-
-
-query = "select * from fruit_load_list"
-data = pd.read_sql_query(query, my_cnx)
