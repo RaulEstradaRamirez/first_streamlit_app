@@ -26,7 +26,8 @@ streamlit.text('What fruit would you like information about?')
 title = streamlit.text_input('What fruit would you like information about?','kiwi')
 streamlit.write('The current movie title is', title)
 
-#view DataFrame my_fruit_list
+df = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+print(df)
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
