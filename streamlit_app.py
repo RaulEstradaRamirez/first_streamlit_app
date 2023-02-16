@@ -54,10 +54,10 @@ try:
         streamlit.dataframe(back_from_function)
 except URLError as e:  
   streamlit.error()
-  
+streamlit.stop()
 streamlit.write('The user entered ', fruit_choice)
 streamlit.text("The fruit load list contains:")
-streamlit.stop()
+
 #snowflake-related functions
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
